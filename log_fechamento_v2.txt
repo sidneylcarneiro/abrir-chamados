@@ -1,0 +1,10 @@
+Chamado RITM0284359: FALHA - Motivo: Failed to read resultado_pesquisa.png because file is missing, has improper permissions, or is an unsupported or invalid format
+Chamado RITM0284311: FALHA - Motivo: Failed to read resultado_pesquisa.png because file is missing, has improper permissions, or is an unsupported or invalid format
+Chamado RITM0284311: FALHA - Motivo: Failed to read resultado_pesquisa.png because file is missing, has improper permissions, or is an unsupported or invalid format
+Chamado RITM0284311: FALHA - Motivo: Failed to read resultado_pesquisa.png because file is missing, has improper permissions, or is an unsupported or invalid format
+Chamado RITM0284311: FALHA - Motivo: Failed to read resultado_pesquisa.png because file is missing, has improper permissions, or is an unsupported or invalid format
+Chamado RITM0284311: FALHA - Motivo: Falha ao pesquisar e abrir o chamado.
+Chamado RITM0284311: FALHA - Motivo: Botão 'Atribuir a mim' não encontrado.
+Chamado RITM0284311: FALHA - Motivo: 
+Chamado RITM0284312: FALHA - Motivo: 
+Chamado RITM0284313: FALHA - Motivo: 

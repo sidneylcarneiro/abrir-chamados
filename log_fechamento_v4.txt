@@ -1,0 +1,22 @@
+Chamado RITM0284317: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284318: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284319: FALHA - Motivo: Botão 'Resolver' não foi encontrado.
+Chamado RITM0284320: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284322: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284323: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284324: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284325: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284326: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284330: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284331: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284332: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284333: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284334: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284335: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284336: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284337: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284338: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284340: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284341: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284342: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0284343: Resolvido com SUCESSO.
