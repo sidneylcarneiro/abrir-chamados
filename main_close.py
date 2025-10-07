@@ -10,25 +10,33 @@ CONFIDENCE_LEVEL = 0.9
 
 # --- NOMES DOS ARQUIVOS ---
 ARQUIVO_CHAMADOS_FECHAR = "chamados_abertos.txt" 
-ARQUIVO_LOG_FECHAMENTO = "log_fechamento_v4.txt" # Novo arquivo de log
+ARQUIVO_LOG_FECHAMENTO = "log_fechamento_v5.txt" # Novo arquivo de log
 
-CARREGAR = 10
+# --------------------------------------------------------------------
+# --- CONFIGURAÇÕES DE TEMPO (em segundos) ---
+# Altere os valores aqui para ajustar as esperas do robô
+# --------------------------------------------------------------------
+TEMPO_ABRIR_NAVEGADOR = 20      # Espera para o navegador abrir e a página inicial carregar
+TEMPO_APOS_PESQUISA = 20        # Pausa após pesquisar o chamado
+TEMPO_APOS_CLIQUE_CHAMADO = 20  # Pausa após abrir o chamado
+TEMPO_APOS_RESOLVER_1 = 20      # Pausa após o 1º clique em "Resolver"
+TEMPO_APOS_RESOLVER_2 = 20      # Pausa após o 2º clique em "Resolver"
+
 
 def abrir_navegador(url):
     """Abre o navegador CHROME na URL especificada e maximiza a janela."""
     print(f"Abrindo navegador CHROME e acessando o Workspace...")
     try:
         subprocess.Popen([CHROME_PATH, url])
-        print("Aguardando 20 segundos para a página carregar...")
-        time.sleep(CARREGAR) # Espera fixa conforme solicitado
-        time.sleep(1)
+        print(f"Aguardando {TEMPO_ABRIR_NAVEGADOR} segundos para a página carregar...")
+        time.sleep(TEMPO_ABRIR_NAVEGADOR)
         print("Navegador aberto e maximizado.")
         return True
     except Exception as e: 
         print(f"ERRO ao abrir o navegador: {e}")
         return False
 
-def esperar_imagem_aparecer(image_path, timeout=25, description=""):
+def esperar_imagem_aparecer(image_path, timeout=40, description=""):
     """Espera ativamente até que uma imagem apareça na tela."""
     print(f"Aguardando '{description}' ({image_path}) aparecer (até {timeout}s)...")
     start_time = time.time()
@@ -75,7 +83,7 @@ def main():
         log_message = f"Chamado {chamado_id}: "
 
         try:
-            # ETAPA 3 e 4: Pesquisar chamado
+            # Pesquisar chamado
             if not esperar_imagem_aparecer('lupa_pesquisa.png', description="Ícone de Lupa"): raise Exception("Ícone de lupa não encontrado.")
             if not encontrar_e_clicar('lupa_pesquisa.png', "Ícone de Lupa"): raise Exception("Falha ao clicar na lupa.")
             time.sleep(1)
@@ -84,32 +92,34 @@ def main():
             gui.press('enter')
             print(f"Pesquisou por: {chamado_id}")
             
-            # ETAPA 5: Aguardar
-            print("Aguardando 20 segundos após a pesquisa...")
-            time.sleep(CARREGAR)
+            print(f"Aguardando {TEMPO_APOS_PESQUISA} segundos após a pesquisa...")
+            time.sleep(TEMPO_APOS_PESQUISA)
 
-            # ETAPA 6: Clicar no resultado
+            # --- NOVA ETAPA ADICIONADA AQUI ---
+            if not esperar_imagem_aparecer('fechar_pesquisa.png', description="Botão 'Fechar Pesquisa'"): raise Exception("Botão para fechar a pesquisa não foi encontrado.")
+            if not encontrar_e_clicar('fechar_pesquisa.png', "Botão 'Fechar Pesquisa'"): raise Exception("Falha ao clicar para fechar a pesquisa.")
+            # ------------------------------------
+
+            # Clicar no resultado
             if not esperar_imagem_aparecer('computador_acessorios.png', description="'Computador e Acessórios'"): raise Exception("Resultado da busca 'Computador e Acessórios' não encontrado.")
             if not encontrar_e_clicar('computador_acessorios.png', "'Computador e Acessórios'"): raise Exception("Falha ao clicar em 'Computador e Acessórios'.")
-            print("Aguardando 20 segundos após clicar no chamado...")
-            time.sleep(CARREGAR)
+            print(f"Aguardando {TEMPO_APOS_CLIQUE_CHAMADO} segundos após clicar no chamado...")
+            time.sleep(TEMPO_APOS_CLIQUE_CHAMADO)
 
-            # ETAPA 7 a 10: Lógica de resolver
+            # Lógica de resolver
             if not esperar_imagem_aparecer('botao_resolver.png', description="Botão 'Resolver'"): raise Exception("Botão 'Resolver' não foi encontrado.")
             if not encontrar_e_clicar('botao_resolver.png', "Botão 'Resolver' (1º clique)"): raise Exception("Falha no primeiro clique em 'Resolver'.")
 
-            print("Aguardando 20 segundos após o 1º clique...")
-            time.sleep(CARREGAR)
+            print(f"Aguardando {TEMPO_APOS_RESOLVER_1} segundos após o 1º clique...")
+            time.sleep(TEMPO_APOS_RESOLVER_1)
             
-            # Tenta o segundo clique se o botão ainda existir
             if esperar_imagem_aparecer('botao_resolver.png', timeout=15, description="Verificação para 2º clique"):
                 if not encontrar_e_clicar('botao_resolver.png', "Botão 'Resolver' (2º clique)"): raise Exception("Falha no segundo clique em 'Resolver'.")
-                print("Aguardando 20 segundos após o 2º clique...")
-                time.sleep(CARREGAR)
+                print(f"Aguardando {TEMPO_APOS_RESOLVER_2} segundos após o 2º clique...")
+                time.sleep(TEMPO_APOS_RESOLVER_2)
             else:
                 print("Botão 'Resolver' não apareceu para o 2º clique.")
 
-            # Verifica uma última vez
             if esperar_imagem_aparecer('botao_resolver.png', timeout=15, description="Verificação final"):
                 log_message += "FALHA - Botão 'Resolver' ainda visível após todas as tentativas."
                 print("!!! O chamado pode não ter sido resolvido. Botão ainda na tela. !!!")
@@ -121,21 +131,18 @@ def main():
             log_message += f"FALHA - Motivo: {e}"
             print(f"!!! {log_message} !!!")
         
-        # Salva o log da operação
         with open(ARQUIVO_LOG_FECHAMENTO, 'a', encoding='utf-8') as f:
             f.write(log_message + "\n")
         
-        # ETAPA 11: Interação com o usuário
         if i < len(chamados_para_fechar) - 1:
             resposta = gui.confirm(
                 text=f'Chamado {chamado_id} processado.\nDeseja continuar?',
                 title='Continuar Automação?',
                 buttons=['Buscar próximo', 'Fechar programa']
             )
-            
             if resposta == 'Fechar programa':
                 print("Usuário escolheu fechar o programa.")
-                break # Encerra o loop for
+                break
         else:
             print("Não há mais chamados na lista.")
 

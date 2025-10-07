@@ -20,3 +20,7 @@ Chamado RITM0284340: FALHA - Botão 'Resolver' ainda visível após todas as ten
 Chamado RITM0284341: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
 Chamado RITM0284342: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
 Chamado RITM0284343: Resolvido com SUCESSO.
+Chamado RITM0285060: FALHA - Motivo: Ícone de lupa não encontrado.
+Chamado RITM0285060: FALHA - Motivo: Botão 'Resolver' não foi encontrado.
+Chamado RITM0285060: Resolvido com SUCESSO.
+Chamado RITM0285054: FALHA - Motivo: Ícone de lupa não encontrado.
