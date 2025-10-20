@@ -1,0 +1,12 @@
+# Bibliotecas que o seu código importa diretamente
+pyautogui
+pyperclip
+
+# Dependências essenciais do PyAutoGUI para reconhecimento de imagem e controle
+Pillow
+pyscreeze
+pygetwindow
+mouseinfo
+pytweening
+
+opencv-python

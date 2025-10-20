@@ -4,3 +4,63 @@ Chamado RITM0285056: Resolvido com SUCESSO.
 Chamado RITM0285057: Resolvido com SUCESSO.
 Chamado RITM0285058: Resolvido com SUCESSO.
 Chamado RITM0285059: Resolvido com SUCESSO.
+Chamado RITM0289457: Resolvido com SUCESSO.
+Chamado RITM0289458: Resolvido com SUCESSO.
+Chamado RITM0289459: Resolvido com SUCESSO.
+Chamado RITM0289460: Resolvido com SUCESSO.
+Chamado RITM0289461: Resolvido com SUCESSO.
+Chamado RITM0289462: Resolvido com SUCESSO.
+Chamado RITM0289463: Resolvido com SUCESSO.
+Chamado RITM0289464: Resolvido com SUCESSO.
+Chamado RITM0289465: Resolvido com SUCESSO.
+Chamado RITM0289466: Resolvido com SUCESSO.
+Chamado RITM0289467: Resolvido com SUCESSO.
+Chamado RITM0289468: Resolvido com SUCESSO.
+Chamado RITM0289470: Resolvido com SUCESSO.
+Chamado RITM0289471: Resolvido com SUCESSO.
+Chamado RITM0289472: Resolvido com SUCESSO.
+Chamado RITM0289473: Resolvido com SUCESSO.
+Chamado RITM0289474: Resolvido com SUCESSO.
+Chamado RITM0289475: Resolvido com SUCESSO.
+Chamado RITM0289476: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289477: Resolvido com SUCESSO.
+Chamado RITM0289478: Resolvido com SUCESSO.
+Chamado RITM0289480: Resolvido com SUCESSO.
+Chamado RITM0289481: Resolvido com SUCESSO.
+Chamado RITM0289482: Resolvido com SUCESSO.
+Chamado RITM0289483: Resolvido com SUCESSO.
+Chamado FALHA NO CHAMADO: 16/10/2025, Microfone / Cabo, -, Márcia Nalim, 8806, 21981369307, A309, 08:10, 16:00  | Motivo: Menu Infraestrutura não encontrado: FALHA - Motivo: 
+Chamado RITM0289510: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289494: Resolvido com SUCESSO.
+Chamado RITM0289488: Resolvido com SUCESSO.
+Chamado RITM0289485: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289507: Resolvido com SUCESSO.
+Chamado RITM0289523: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289491: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289486: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289525: Resolvido com SUCESSO.
+Chamado RITM0289521: Resolvido com SUCESSO.
+Chamado RITM0289490: Resolvido com SUCESSO.
+Chamado RITM0289512: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289508: Resolvido com SUCESSO.
+Chamado RITM0289515: Resolvido com SUCESSO.
+Chamado RITM0289516: Resolvido com SUCESSO.
+Chamado RITM0289518: Resolvido com SUCESSO.
+Chamado RITM0289520: Resolvido com SUCESSO.
+Chamado RITM0289511: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289504: Resolvido com SUCESSO.
+Chamado RITM0289487: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289509: Resolvido com SUCESSO.
+Chamado RITM0289497: Resolvido com SUCESSO.
+Chamado RITM0289526: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289493: Resolvido com SUCESSO.
+Chamado RITM0289492: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289500: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289517: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289524: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289513: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289528: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289522: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289519: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289529: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
+Chamado RITM0289484: FALHA - Botão 'Resolver' ainda visível após todas as tentativas.
