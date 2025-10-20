@@ -2,7 +2,7 @@ import pyautogui as gui
 import time
 import subprocess
 import pyperclip
-import os
+# import os
 
 # --- CONFIGURAÇÕES GLOBAIS ---
 URL_WORKSPACE_V4 = "https://afya.service-now.com/now/workspace/agent/home/sub/non_record/layout/params/list-title/My%20work/table/task/query/active%3Dtrue%5Eassigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe/workspace-config-id/7b24ceae5304130084acddeeff7b12a3/word-wrap/false/disable-quick-edit/true"
